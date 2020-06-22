@@ -18,7 +18,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  <properties>
+    <sonar.projectKey>mcanog_maven-integration</sonar.projectKey>
+    <sonar.organization>mcanog</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+<!--    <sonar.login>7b50590d2e8ac7f5d45bfae345c66f22ebae3e89</sonar.login> -->
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -53,7 +58,13 @@
                   </goals>
               </execution>
           </executions>
-      </plugin>  
+      </plugin> 
+      <!--Sonar Scanner-->
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.6.0.1398</version>
+      </plugin>
     </plugins> 
   </build>
 
