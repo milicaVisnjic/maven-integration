@@ -1,6 +1,11 @@
 name: Java CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - sonarcloud
+  pull_request:
 
 jobs:
   build:
