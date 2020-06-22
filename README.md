@@ -1,3 +1,9 @@
-# This is a demo of a Maven app
+# Integration of a Maven project with
 
-This app will also be connected to SonarCloud and use the PMD-Maven plugin	
+This projects shows how the integration of a Maven project works with SonarCloud. To run:
+
+mvn install
+
+or to only use SonarCloud:
+
+mvn verify sonar:sonar
