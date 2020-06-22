@@ -19,13 +19,13 @@ public class AppTest
 	}
 	@Test
 	public void whenPalindrom_thenAccept() {
-	    Palindrome palindromeTester = new Palindrome();
+	    App palindromeTester = new App();
 	    assertTrue(palindromeTester.isPalindrome("noon"));
 	}
 	     
 	@Test
 	public void whenNearPalindrom_thanReject(){
-	    Palindrome palindromeTester = new Palindrome();
+	    App palindromeTester = new App();
 	    assertFalse(palindromeTester.isPalindrome("neon"));
 	}
 }
