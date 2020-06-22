@@ -13,9 +13,10 @@ jobs:
         with:
           java-version: 1.8
       - name: Scan with SonarCloud
-        run: mvn sonar:sonar -Dsonar.login=${{ secrets.SONARCLOUD }}
+        run: mvn verify sonar:sonar -Dsonar.login=${{ secrets.SONARCLOUD }}
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             JAVA_HOME: ''
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
+# We do not build for test purposes            
+#      - name: Build with Maven
+#        run: mvn -B package --file pom.xml

@@ -22,7 +22,6 @@
     <sonar.projectKey>mcanog_maven-integration</sonar.projectKey>
     <sonar.organization>mcanog</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-<!--    <sonar.login>7b50590d2e8ac7f5d45bfae345c66f22ebae3e89</sonar.login> -->
   </properties>
   <build>
     <plugins>
