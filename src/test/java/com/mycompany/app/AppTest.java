@@ -12,9 +12,9 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	@Test
+	public void whenEmptyString_thenAccept() {
+	    App palindromeTester = new App();
+	    assertTrue(palindromeTester.isPalindrome(""));
+	}
 }
